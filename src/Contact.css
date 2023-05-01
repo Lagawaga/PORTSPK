@@ -1,0 +1,61 @@
+.contact-wrapper {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3% 3%;
+
+  transition: all 0.8s ease-in-out;
+  background-color: rgba(34, 34, 34, 0.55);
+  border-radius: 3px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  margin: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.contact-text {
+  font-size: 35px;
+  margin-top: 20px;
+  text-align: left;
+  padding: 5px;
+}
+
+.contact-inner-col {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.contact-phonenumber-block {
+  top: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  float: right;
+  padding: 50px;
+}
+
+.contact-text-phonenumber {
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.contact-text-hours {
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: left;
+  margin: 5px;
+}
