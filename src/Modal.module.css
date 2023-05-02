@@ -18,8 +18,8 @@
 }
 
 .modal {
-  width: 1600px;
-  height: 600px;
+  width: 90%;
+  height: 90%;
   overflow-y: auto;
   border-style: solid;
   background-color: #21404bff;

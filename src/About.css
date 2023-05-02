@@ -1,9 +1,9 @@
 .about-wrapper {
   text-align: center;
   position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 0%;
+
   padding: 3% 3%;
 
   transition: all 0.8s ease-in-out;
@@ -30,11 +30,11 @@
   float: left;
 }
 
-.about-pic-block {
+/* .about-pic-block {
   max-width: 575px;
   max-height: 555px;
   float: right;
-}
+} */
 
 .about-title-wrapper {
   color: #fff;

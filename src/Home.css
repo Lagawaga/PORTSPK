@@ -1,11 +1,11 @@
 .home-wrapper {
   text-align: center;
   position: absolute;
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
   padding: 5% 3%;
-
+  height: 40vh;
   transition: all 0.8s ease-in-out;
   background-color: rgb(72, 200, 240, 0.4);
   border-style: solid;
@@ -16,13 +16,14 @@
 .logo {
   float: left;
   width: 50%;
+  height: 40vh;
   border: 5px;
   border-color: red;
   padding-right: 10%;
 }
 
 .logo-size {
-  width: 100%;
+  width: 50vh;
 
   border-style: solid;
   border-color: #03161eff;

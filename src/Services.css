@@ -1,9 +1,9 @@
 .services-wrapper {
   text-align: center;
   position: absolute;
-  top: 81%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 0%;
+
   padding: 5% 5%;
 
   transition: all 0.8s ease-in-out;
