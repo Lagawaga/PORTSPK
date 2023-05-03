@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="home-wrapper">
       <div className="logo">
-        <img className="logo-size" src="/logo.png" alt="image" />
+        <img className="logo-size" src="/logo.png" alt="spklogo" />
       </div>
       <div className="home">
         <div className="home-title">
