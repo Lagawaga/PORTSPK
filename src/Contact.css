@@ -59,3 +59,24 @@ textarea {
   text-align: left;
   margin: 5px;
 }
+@media only screen and (max-width: 850px) {
+  .contact-inner-col {
+    width: 90%;
+    display: inline-block;
+    float: none;
+  }
+  .contact-phonenumber-block {
+    top: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    float: none;
+    padding: 50px;
+  }
+
+  .contact-text-phonenumber {
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
