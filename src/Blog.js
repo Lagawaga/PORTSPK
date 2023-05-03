@@ -43,7 +43,6 @@ function Blog() {
             </button>
           </div>
         </div>
-        <div className="about-inner-col">philip is cool</div>
 
         <div className="about-inner-col about-pic-block">
           <div className="about-content-inner-block">
