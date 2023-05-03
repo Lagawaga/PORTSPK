@@ -1,11 +1,11 @@
 .darkBG {
   background-color: rgba(0, 0, 0, 0.9);
-  width: 90vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
   position: absolute;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .modal {
-  width: 90%;
-  height: 90%;
+  width: 65vw;
+  height: 70vh;
   overflow-y: auto;
   border-style: solid;
   background-color: #21404bff;
