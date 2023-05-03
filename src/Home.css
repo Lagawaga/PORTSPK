@@ -107,3 +107,44 @@ button {
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    height: 20vh;
+    float: none;
+    align-items: center;
+    border: 5px;
+    border-color: red;
+    padding-right: 0%;
+  }
+
+  .logo-size {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: #03161eff;
+  }
+
+  .home {
+    display: block;
+    color: #03161eff;
+    text-align: left;
+    font-size: 22.5px;
+
+    padding: 20px;
+
+    text-decoration: none;
+  }
+
+  .home-title {
+    background-color: #03161eff;
+    border-style: solid;
+    color: white;
+    box-shadow: 5px 10px;
+  }
+
+  .home-blurb {
+    color: white;
+    font-size: 21px;
+  }
+}
