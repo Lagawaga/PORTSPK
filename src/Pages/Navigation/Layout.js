@@ -19,19 +19,19 @@ function Layout() {
           <div className="main-navigation__drawer-nav">
             <ul className="nav-links">
               <li>
-                <Link to="/Blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/Contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="/About">About</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/Services">Services</Link>
               </li>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/About">About</Link>
+              </li>
+              <li>
+                <Link to="/Contact">Contact</Link>
+              </li>
+              <li>
+                <Link to="/Blog">Blog</Link>
               </li>
             </ul>
           </div>
