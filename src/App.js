@@ -1,14 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import logo from "./shared/logo.svg";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
-import About from "./About";
-import Contact from "./Contact";
-import Home from "./Home";
-import Blog from "./Blog";
-import Services from "./Services";
+import Layout from "./Pages/Navigation/Layout";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import Blog from "./Pages/Blog";
+import Services from "./Pages/Services";
 import { NotFound } from "./NotFound";
 
 function App() {

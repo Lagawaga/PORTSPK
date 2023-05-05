@@ -148,12 +148,13 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 850px) {
   .about-wrapper {
+    margin-top: 10%;
     max-height: 75vh;
     overflow-x: hidden;
     overflow-y: visible;
-    width: 85vw;
+    width: 90vw;
   }
   .about-inner-col {
     width: 100%;
@@ -169,6 +170,12 @@ iframe {
   }
   .about-title {
     margin-top: -10px;
+    font-size: 30px;
+  }
+  .about-text {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: left;
   }
 }
 

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 import Modal from "./Modal";
-import blogposts from "./blogposts";
+import blogposts from "../shared/blogposts";
 import "./Blog.css";
 
 function Blog() {
