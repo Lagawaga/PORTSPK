@@ -46,6 +46,7 @@
   border-style: solid;
   color: white;
   box-shadow: 5px 10px;
+  text-align: left;
 }
 
 .home-blurb {
@@ -162,5 +163,12 @@ button {
   .home-blurb {
     color: white;
     font-size: 21px;
+  }
+  .home-title {
+    background-color: #03161eff;
+    border-style: solid;
+    color: white;
+    box-shadow: 5px 10px;
+    text-align: center;
   }
 }

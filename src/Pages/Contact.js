@@ -1,13 +1,14 @@
 import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import Input from "./FormElements/Input";
 
 function Contact() {
   const form = useRef();
   const [emailSent, setEmailSent] = useState();
   const [emailNotif, setEmailNotif] = useState("Send");
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
     emailjs
@@ -18,12 +19,12 @@ function Contact() {
         "MZtGOJxHMzBd17ci-"
       )
       .then(
-        (result) => {
+        result => {
           console.log("Success!");
           setEmailSent(true);
           setEmailNotif(<p style={{ color: "green" }}>Email sent</p>);
         },
-        (error) => {
+        error => {
           console.log("Failed");
           setEmailSent(false);
           setEmailNotif(<p style={{ color: "red" }}>Email sent</p>);
@@ -45,23 +46,36 @@ function Contact() {
             </div>
             <div className="contact-text">
               <form className="contact-form" ref={form} onSubmit={sendEmail}>
-                <input
+                {/* <input
                   type="text"
                   name="user_name"
                   placeholder="Name"
                   title="Name"
+                /> */}
+                <Input
+                  id="title"
+                  type="text"
+                  // label="Name"
+                  placeholder="Name"
+                  element="input"
+                  // validators={[VALIDATOR_REQUIRE()]}
+                  errorText="Please Enter a your name."
+                  // onInput={inputHandler}
                 />
-
-                <input
-                  type="email"
-                  name="user_email"
-                  placeholder="Email Address"
-                  title="Email Address"
+                <Input
+                  id="email"
+                  type="text"
+                  // label="Name"
+                  placeholder="Email"
+                  element="input"
+                  // validators={[VALIDATOR_REQUIRE()]}
+                  errorText="Please Enter a valid email."
+                  // onInput={inputHandler}
                 />
 
                 <textarea
                   name="message"
-                  rows="5"
+                  rows="10"
                   cols="50"
                   placeholder="Type your message here..."
                   title="Type your message here..."
