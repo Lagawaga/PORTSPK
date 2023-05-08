@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import "./Input.css";
 const inputReducer = (state, action) => {
-  console.log(action.isValid);
+  //console.log(action.isValid);
   switch (action.type) {
     case "CHANGE":
       return {
@@ -23,15 +23,14 @@ const Input = props => {
   const [inputState, dispatch] = useReducer(inputReducer, {
     value: "",
     isTouched: false,
-    isValid: "john",
+    isValid: false,
   });
 
   const changeHandler = event => {
-    console.log(event.target.value.length);
     dispatch({
       type: "CHANGE",
       val: event.target.value,
-      isValid: event.target.value.length !== 0,
+      isValid: event.target.value.trim().length > 0,
     });
   };
 
@@ -44,10 +43,12 @@ const Input = props => {
     });
   };
   const touchHandler = event => {
+    console.log("touched");
     dispatch({
       type: "TOUCH",
       val: event.target.value,
       isValid: event.target.value,
+      isTouched: event.target.value === "",
     });
   };
   const element =
@@ -75,6 +76,7 @@ const Input = props => {
         !inputState.isValid && inputState.isTouched && "form-control--invalid"
       }`}
     >
+      {/* {inputState.isTouched && <p>true</p>} */}
       <label htmlFor={props.id}>{props.label}</label>
       {element}
       {!inputState.isValid && inputState.isTouched && <p>{props.errorText}</p>}
