@@ -73,12 +73,15 @@ function Contact() {
                   // onInput={inputHandler}
                 />
 
-                <textarea
-                  name="message"
-                  rows="10"
-                  cols="50"
-                  placeholder="Type your message here..."
-                  title="Type your message here..."
+                <Input
+                  id="email"
+                  type="text"
+                  // label="Name"
+                  placeholder="Enter your message."
+                  element="textarea"
+                  // validators={[VALIDATOR_REQUIRE()]}
+                  errorText="Please Enter a message."
+                  // onInput={inputHandler}
                 />
                 <button className="button-arounder" type="submit">
                   {emailNotif}

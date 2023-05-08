@@ -68,6 +68,7 @@ const Input = props => {
         value={inputState.value}
         onChange={changeHandler}
         onBlur={touchHandler}
+        placeholder={props.placeholder}
       />
     );
   return (
