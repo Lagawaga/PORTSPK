@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import "./Input.css";
+import { validate } from "../../shared/validators";
 const inputReducer = (state, action) => {
   //console.log(action.isValid);
   switch (action.type) {
@@ -7,7 +8,7 @@ const inputReducer = (state, action) => {
       return {
         ...state,
         value: action.val,
-        isValid: action.isValid,
+        isValid: validate(action.val, action.validators),
       };
     case "TOUCH": {
       return {
@@ -30,25 +31,18 @@ const Input = props => {
     dispatch({
       type: "CHANGE",
       val: event.target.value,
-      isValid: event.target.value.trim().length > 0,
+      validators: props.validators,
     });
   };
 
-  const emailHandler = event => {
-    console.log(event.target.value.length);
-    dispatch({
-      type: "CHANGE",
-      val: event.target.value,
-      isValid: event.target.value.includes("@"),
-    });
-  };
   const touchHandler = event => {
     console.log("touched");
     dispatch({
       type: "TOUCH",
       val: event.target.value,
-      isValid: event.target.value,
-      isTouched: event.target.value === "",
+      validators: props.validators,
+      // isValid: event.target.value,
+      // isTouched: event.target.value === "",
     });
   };
   const element =

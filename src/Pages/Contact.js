@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import Input from "./FormElements/Input";
+import { VALIDATOR_REQUIRE, VALIDATE_EMAIL } from "../shared/validators";
 
 function Contact() {
   const form = useRef();
@@ -58,7 +59,7 @@ function Contact() {
                   // label="Name"
                   placeholder="Name"
                   element="input"
-                  // validators={[VALIDATOR_REQUIRE()]}
+                  validators={[VALIDATOR_REQUIRE()]}
                   errorText="Please Enter a your name."
                   // onInput={inputHandler}
                 />
@@ -68,7 +69,7 @@ function Contact() {
                   // label="Name"
                   placeholder="Email"
                   element="input"
-                  // validators={[VALIDATOR_REQUIRE()]}
+                  validators={[VALIDATE_EMAIL()]}
                   errorText="Please Enter a valid email."
                   // onInput={inputHandler}
                 />
@@ -79,7 +80,7 @@ function Contact() {
                   // label="Name"
                   placeholder="Enter your message."
                   element="textarea"
-                  // validators={[VALIDATOR_REQUIRE()]}
+                  validators={[VALIDATOR_REQUIRE()]}
                   errorText="Please Enter a message."
                   // onInput={inputHandler}
                 />
