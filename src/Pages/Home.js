@@ -23,7 +23,7 @@ function Home() {
           potential cybersecurity vulnerabilities.
         </p>
 
-        <div class="buttons-container">
+        <div className="buttons-container">
           <button className="button-arounder" onClick={routeChange}>
             Learn more
           </button>
