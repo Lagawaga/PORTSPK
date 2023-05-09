@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 769px) {
   .side-drawer {
     display: block;
     position: fixed;

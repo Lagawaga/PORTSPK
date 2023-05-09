@@ -52,7 +52,7 @@
   top: 0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 769px) {
   .navbar-logo {
     background-color: rgb(56, 162, 196, 0.7);
     height: 65px;
@@ -97,8 +97,11 @@
     background: white;
   }
   .nav-links li {
-    margin: 0 0.5rem;
+    margin: 10px;
+    padding-top: 1px;
     color: rgb(56, 162, 196, 0.7);
+    border: 3px solid black;
+    background-color: rgba(34, 129, 161, 0.7);
   }
 
   /* .navbar-list li a {
@@ -107,12 +110,14 @@
   .nav-links {
     flex-direction: row;
     background-color: rgb(56, 162, 196, 0.7);
+    padding-left: 10px;
   }
 
   .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 5rem;
+    padding: 50px;
   }
   /* 
   .nav-links button {

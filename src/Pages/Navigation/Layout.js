@@ -17,6 +17,7 @@ function Layout() {
       <nav>
         <SideDrawer show={drawerIsOpen} onClick={closeSideDrawer}>
           <div className="main-navigation__drawer-nav">
+            <h1 className="navbar-title">PORTSPK™</h1>
             <ul className="nav-links">
               <li>
                 <Link to="/">Home</Link>
