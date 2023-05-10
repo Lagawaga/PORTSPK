@@ -117,8 +117,13 @@
     color: white;
     text-decoration: none;
     font-size: 3rem;
-    /* padding: 50px; */
-    margin-left: 1em;
+    /* border: 1px solid black; */
+    /* padding-left: 2em; */
+    /* padding-right: 2em; */
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: 0;
+    width: 100%;
   }
   /* 
   .nav-links button {
