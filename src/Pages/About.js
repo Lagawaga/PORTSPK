@@ -50,7 +50,7 @@ function About() {
           </div>
         </div>
 
-        <div className="about-pic-block">
+        <div className="about-inner-col about-pic-block">
           <img className="ottawapic-size" src="/ottawapic.jpg" alt="ottawa" />
         </div>
       </div>

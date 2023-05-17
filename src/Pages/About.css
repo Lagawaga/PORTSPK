@@ -12,11 +12,12 @@
 }
 
 .ottawapic-size {
-  width: 130%;
+  width: 110%;
   top: 50%;
   bottom: 50%;
   border-style: solid;
   border-color: #03161eff;
+  margin-left: 40px;
 }
 
 .about-inner {
@@ -163,8 +164,9 @@ iframe {
   }
   .about-pic-block {
     margin-top: 5%;
+
     width: 100%;
-    height: 55vh;
+    height: 250px;
     text-align: center;
   }
   .ottawapic-size {
@@ -174,6 +176,7 @@ iframe {
     bottom: 50%;
     border-style: solid;
     border-color: #03161eff;
+    margin-left: 0px;
   }
 
   .about-content-inner-block {
