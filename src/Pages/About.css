@@ -30,11 +30,11 @@
   float: left;
 }
 
-/* .about-pic-block {
+.about-pic-block {
   max-width: 575px;
   max-height: 555px;
   float: right;
-} */
+}
 
 .about-title-wrapper {
   color: #fff;
@@ -139,14 +139,14 @@ iframe {
   color: white;
 }
 
-@media only screen and (max-width: 850px) {
+/* @media only screen and (max-width: 850px) {
   .about-content-inner-block {
     width: 45.333333%;
   }
   .about-content-inner-block:last-child {
     display: none;
   }
-}
+} */
 
 @media only screen and (max-width: 769px) {
   .about-wrapper {
@@ -158,7 +158,24 @@ iframe {
   }
   .about-inner-col {
     width: 100%;
+    display: inline-block;
+    text-align: center;
   }
+  .about-pic-block {
+    margin-top: 5%;
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+  }
+  .ottawapic-size {
+    width: 70%;
+    top: 50%;
+    text-align: center;
+    bottom: 50%;
+    border-style: solid;
+    border-color: #03161eff;
+  }
+
   .about-content-inner-block {
     width: 31.333333%;
   }

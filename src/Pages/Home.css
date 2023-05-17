@@ -115,7 +115,7 @@ button[disabled] {
   color: #666666;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 769px) {
   .home-wrapper {
     text-align: center;
     position: absolute;
@@ -130,6 +130,20 @@ button[disabled] {
     border-style: solid;
     border-color: white;
     border-radius: 3px;
+  }
+  .button-arounder {
+    font-size: 1rem;
+    background: #03161eff;
+    color: hsl(190deg, 10%, 95%);
+
+    box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, 0.2);
+  }
+
+  button:disabled,
+  button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
   }
 
   .logo {
