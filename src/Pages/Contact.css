@@ -44,14 +44,15 @@
 
 .contact-phonenumber-block {
   top: 50%;
-  width: 50%;
+  width: 35%;
   height: 100vh;
   float: right;
-  text-align: right;
+
+  padding: 1%;
 }
 
 .contact-text-phonenumber {
-  font-size: 45px;
+  font-size: 35px;
   margin-top: 20px;
   text-align: left;
   margin-bottom: 50px;
@@ -69,12 +70,15 @@
     display: inline-block;
     float: none;
   }
+
   .contact-phonenumber-block {
-    top: 50%;
-    max-width: 500px;
-    max-height: 500px;
+    margin-top: 40px;
+    margin-left: 25px;
+    width: 100%;
+    height: 100%;
     float: none;
-    padding: 50px;
+    text-align: center;
+    padding: 1%;
   }
 
   .contact-text-phonenumber {
