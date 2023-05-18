@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 import "./Layout.css";
 import { useState } from "react";
@@ -20,19 +20,29 @@ function Layout() {
             <h1 className="navbar-title">PORTSPK™</h1>
             <ul className="nav-links">
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/" className="highlight">
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/Services">Services</Link>
+                <NavLink to="/Services" className="highlight">
+                  Services
+                </NavLink>
               </li>
               <li>
-                <Link to="/About">About</Link>
+                <NavLink to="/About" className="highlight">
+                  About
+                </NavLink>
               </li>
               <li>
-                <Link to="/Contact">Contact</Link>
+                <NavLink to="/Contact" className="highlight">
+                  Contact
+                </NavLink>
               </li>
               <li>
-                <Link to="/Blog">Blog</Link>
+                <NavLink to="/Blog" className="highlight">
+                  Blog
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -47,19 +57,36 @@ function Layout() {
           <div className="navbar-list">
             <ul>
               <li>
-                <Link to="/Blog">Blog</Link>
+                <NavLink to="/Blog" className="highlight">
+                  Blog
+                </NavLink>
               </li>
               <li>
-                <Link to="/Contact">Contact</Link>
+                <NavLink to="/Contact" className="highlight">
+                  Contact
+                </NavLink>
               </li>
               <li>
-                <Link to="/About">About</Link>
+                <NavLink to="/About" className="highlight">
+                  About
+                </NavLink>
               </li>
               <li>
-                <Link to="/Services">Services</Link>
+                <NavLink to="/Services" className="highlight">
+                  Services
+                </NavLink>
               </li>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink
+                  to="/"
+                  // className={"highlight" + (url === "/" ? " active" : "")}
+                  className="highlight"
+                  // style={({ isActive }) => {
+                  //   return { color: isActive ? "skyblue" : "" };
+                  // }}
+                >
+                  Home
+                </NavLink>
               </li>
             </ul>
           </div>
